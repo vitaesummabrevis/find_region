@@ -1,0 +1,47 @@
+Function Region(country As String, state As String) As String
+
+
+
+If country <> "United States" Then
+
+    Region = "International"
+
+ElseIf state = "Arkansas" Or state = "Mississippi" Or state = “Louisiana” Or state = "Tennesee" Or state = “Alabama” Then
+
+    Region = “South Central”
+
+ElseIf state = “Texas” Or state = “New Mexico” Or state = “Arizona” Then
+
+    Region = “Southwest”
+
+ElseIf state = “Alaska” Or state = “California” Or state = “Oregon” Or state = “Washington” Then
+
+    Region = “Pacific”
+
+ElseIf state = “Nevada” Or state = “Utah” Or state = “Colorado” Or state = “Wyoming” Or state = “Idaho” Or state = “Montana” Then
+
+    Region = “Mountains”
+
+ElseIf state = “North Dakota” Or state = “Minnesota” Or state = “South Dakota” Or state = “Nebraska” Or state = “Iowa” Or state = “Kansas” Or state = “Missouri” Or state = “Oklahoma” Then
+
+    Region = “Great Plains”
+
+ElseIf state = “Wisconsin” Or state = “Illinois” Or state = “Michigan” Or state = “Indiana” Or state = “Ohio” Or state = “Kentucky” Then
+
+    Region = “Midwest”
+
+ElseIf state = “Maine” Or state = “New Hampshire” Or state = “Vermont” Or state = “Massachusetts” Or state = “Rhode Island” Or state = “Connecticut” Or state = “New York” Or state = “Pennsylvania” Or state = “New Jersey” Then
+
+    Region = “Northeast”
+
+ElseIf state = “Delaware” Or state = “Maryland” Or state = “West Virginia” Or state = “District of Columbia”  Then
+
+    Region = “Mid-Atlantic”
+
+ElseIf state = “North Carolina” Or state = “South Carolina” Or state = “Georgia” Or state = “Florida” Then
+
+    Region = “Southeast Atlantic”
+
+End If
+
+End Function
